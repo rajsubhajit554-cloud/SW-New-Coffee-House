@@ -68,13 +68,15 @@ h1, h2, h3, h4, .logo-text {
     box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
 }
 
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: 1px;
-    background: linear-gradient(90deg, var(--accent-neon), var(--accent-warm));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.logo-brand-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-brand-img:hover {
+    transform: scale(1.05);
 }
 
 .nav-links {
@@ -460,8 +462,8 @@ footer {
     .hamburger {
         display: block;
     }
-    .logo-text {
-        font-size: 1.1rem;
+    .logo-brand-img {
+        height: 32px;
     }
     .logo-img {
         height: 35px;
