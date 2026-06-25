@@ -1061,17 +1061,17 @@ footer p::after {
         opacity: 1;
     }
     21.4% {
-        left: calc(100vw - 10% - 110px);
+        left: calc(100vw - 10% - 220px);
         transform: rotate(1440deg);
         opacity: 0;
     }
     50% {
-        left: calc(100vw - 10% - 110px);
+        left: calc(100vw - 10% - 220px);
         transform: rotate(1440deg);
         opacity: 0;
     }
     51.5% {
-        left: calc(100vw - 10% - 110px);
+        left: calc(100vw - 10% - 220px);
         transform: rotate(1440deg);
         opacity: 1;
     }
@@ -1112,17 +1112,17 @@ footer p::after {
         opacity: 1;
     }
     21.4% {
-        left: calc(100vw - 10% - 90px);
+        left: calc(100vw - 10% - 160px);
         transform: rotate(1440deg);
         opacity: 0;
     }
     50% {
-        left: calc(100vw - 10% - 90px);
+        left: calc(100vw - 10% - 160px);
         transform: rotate(1440deg);
         opacity: 0;
     }
     51.5% {
-        left: calc(100vw - 10% - 90px);
+        left: calc(100vw - 10% - 160px);
         transform: rotate(1440deg);
         opacity: 1;
     }
