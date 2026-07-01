@@ -61,6 +61,21 @@ if %errorlevel% neq 0 (
 )
 
 echo.
+echo Pulling latest changes from GitHub...
+git pull origin main
+if %errorlevel% neq 0 (
+    color 0C
+    echo.
+    echo ===================================================
+    echo  ERROR: Failed to pull latest changes from GitHub.
+    echo  If there are merge conflicts, please resolve them.
+    echo ===================================================
+    echo.
+    pause
+    exit /b
+)
+
+echo.
 echo Pushing changes to GitHub (origin main)...
 git push origin main
 
