@@ -1,10 +1,10 @@
 @echo off
 setlocal enabledelayedexpansion
-title SW Mehuli's Kitchen - Git Auto Updater
-color 0F
+title SW New Coffee House - Git Auto Updater
+color 0B
 
 echo ===================================================
-echo     SW Mehuli's Kitchen - Git Auto-Update Tool
+echo     SW New Coffee House - Git Auto-Update Tool
 echo ===================================================
 echo.
 
