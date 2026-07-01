@@ -1,27 +1,27 @@
 /* ============================================================
-   MEHULI'S KITCHEN — Modern Restaurant Theme
+   NEW COFFEE HOUSE — Modern Cafe Theme
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&display=swap');
 
 /* ---- CSS Variables ---- */
 :root {
-    --bg-deep:       #0a0705;
-    --bg-dark:       #110e0a;
-    --bg-card:       #1a1410;
-    --bg-card2:      #211a13;
-    --accent-gold:   #c8922a;
-    --accent-amber:  #e8a83a;
-    --accent-light:  #f5c96a;
-    --accent-red:    #de4517;
-    --accent-warm:   #ff8b60;
-    --text-primary:  #f5ede0;
-    --text-secondary:#b09878;
-    --text-muted:    #6b5a48;
-    --glass-bg:      rgba(200, 146, 42, 0.05);
-    --glass-border:  rgba(200, 146, 42, 0.18);
-    --glass-shadow:  0 8px 40px rgba(0, 0, 0, 0.6);
-    --glow-gold:     0 0 25px rgba(200, 146, 42, 0.3);
+    --bg-deep:       #fcfaf7;
+    --bg-dark:       #f4eedf;
+    --bg-card:       #ffffff;
+    --bg-card2:      #eae3d2;
+    --accent-gold:   #a6731e;
+    --accent-amber:  #be811a;
+    --accent-light:  #b8801d;
+    --accent-red:    #b8340d;
+    --accent-warm:   #d26d45;
+    --text-primary:  #2f2219;
+    --text-secondary:#6e5947;
+    --text-muted:    #9b8876;
+    --glass-bg:      rgba(255, 255, 255, 0.75);
+    --glass-border:  rgba(166, 115, 30, 0.15);
+    --glass-shadow:  0 8px 30px rgba(47, 34, 25, 0.08);
+    --glow-gold:     0 0 20px rgba(166, 115, 30, 0.15);
     --radius-sm:     8px;
     --radius-md:     16px;
     --radius-lg:     24px;
@@ -76,20 +76,20 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(10, 7, 5, 0.92);
+    background: rgba(252, 250, 247, 0.92);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(200, 146, 42, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
     transition: var(--transition);
 }
 
 .navbar-scrolled {
     height: 62px;
-    background: rgba(10, 7, 5, 0.97);
-    border-bottom-color: rgba(200, 146, 42, 0.35);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7), var(--glow-gold);
+    background: rgba(252, 250, 247, 0.97);
+    border-bottom-color: var(--glass-border);
+    box-shadow: var(--glass-shadow), var(--glow-gold);
 }
 
 .logo-container {
@@ -141,14 +141,14 @@ h1, h2, h3, h4 {
     right: 5%; /* Align with padding of navbar actions */
     width: 210px;
     height: auto;
-    background: rgba(10, 7, 5, 0.97);
+    background: rgba(252, 250, 247, 0.97);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(200, 146, 42, 0.2);
+    border: 1px solid var(--glass-border);
     border-radius: 0 0 var(--radius-md) var(--radius-md);
     padding: 1.5rem 0;
     gap: 0.25rem;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    box-shadow: var(--glass-shadow);
     opacity: 0;
     transform: translateY(-8px);
     pointer-events: none;
@@ -703,13 +703,13 @@ section {
    GLASSMORPHISM CARD
    ============================================================ */
 .glassmorphism {
-    background: rgba(26, 20, 16, 0.65);
+    background: var(--glass-bg);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(200, 146, 42, 0.15);
+    border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     padding: 24px 32px;
-    box-shadow: 0 8px 48px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(200, 146, 42, 0.08);
+    box-shadow: var(--glass-shadow);
 }
 
 #contact {
@@ -973,15 +973,15 @@ footer p::after {
 
     .prev-btn {
         left: -6px;
-        background: rgba(10, 7, 5, 0.85);
-        border-color: rgba(200, 146, 42, 0.5);
+        background: rgba(252, 250, 247, 0.85);
+        border-color: var(--glass-border);
         width: 40px;
         height: 40px;
     }
     .next-btn {
         right: -6px;
-        background: rgba(10, 7, 5, 0.85);
-        border-color: rgba(200, 146, 42, 0.5);
+        background: rgba(252, 250, 247, 0.85);
+        border-color: var(--glass-border);
         width: 40px;
         height: 40px;
     }
